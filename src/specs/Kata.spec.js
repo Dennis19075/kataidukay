@@ -18,7 +18,13 @@ describe('Kata', () => {
   
   describe('on instance', () => {
     it('should defined default states and props', () => {
-      
+      instance.generateArray(3,3); //filas x columnas
+
+      expect(instance.state.resultadoArray).toEqual([
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+      ]);
     });
   });
 });
